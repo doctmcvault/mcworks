@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greeting Card</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: rgb(154, 185, 250);
+			font-family: cursive;
+            
+        }
+
+        .card {
+            border-radius: 10px;
+            box-shadow: 0px 40px 42px rgba(0, 0, 0, 0.1);
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 50px;
+            padding-right: 50px;
+            border: 4px solid black;
+			margin: 10%;
+            margin-top: 10%;
+			background-color: rgb(233, 198, 132);
+			text-align: center;
+            
+        }
+
+
+        .card-image {
+            display: none;
+            justify-content: center;
+            padding-left: 24%;
+            
+            width: 280px;
+            height: 300px;
+        }
+
+        .card-message {
+            display: none;
+            margin-top: 20px;
+        }
+
+        .btn {
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            color: #ffffff;
+            font-family: cursive;
+            font-size: 17px;
+            justify-content: center;
+            height:35px;
+            width: 120px;
+            background-color:rgb(58, 56, 56);
+        }
+        .btn:hover{
+            background:#777373d7 ;
+            color: #ffffff;
+		}
+        audio{
+            
+            padding-left:60px ;
+            padding-right:60px ;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        
+        <h2>From Me to You!</h2>
+        
+        <button class="btn" onclick="showCardContents()">Open Me</button>
+        <br>
+        <img class="card-image" src="palon.jpg" alt="Greeting Card Image">
+        <div class="card-message">
+            <p> 
+                <br>
+                Hanep akalain mo 'yon 20 kana pala non parang kahapon lang 19 ka hano, <br>
+                tas nxt year 21 tas 22 kana tas the nxt following years mag-aasawa kana <br>
+                tas magkakanak tapos mag-sisilaki na maga anak mo at magaasawa na sila <br>
+                tas magkakaapo kana sakanila tas sa sobrang tanda mo na at ng asawa mo <br>
+                mauuna na sya sayo tas susunod kana sakanya...shet grabe kabilis no? <br>
+                buti na lang 20 ka pa lang kaya enjoy ur day today, <br>
+                Happy Birthday!!🥳🥳🎉🎉
+
+            </p>
+        </div>
+        <audio id="greeting-audio" autoplay loop >
+            <source src="Happy Birthday Memes Style.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+    
+
+    <script>
+        function showCardContents() {
+            const button = document.querySelector(".btn");
+            const image = document.querySelector(".card-image");
+            const message = document.querySelector(".card-message");
+            const audio = document.getElementById("greeting-audio");
+            
+
+            button.style.display = "none";
+            image.style.display = "block";
+            message.style.display = "block";
+            audio.style.display = "block";
+            audio.play();
+        }
+    </script>
+</body>
+</html>
+
+

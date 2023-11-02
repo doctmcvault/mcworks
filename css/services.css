@@ -1,0 +1,328 @@
+
+.bar {
+    width: 100%;
+    background: linear-gradient(to top, rgba(3, 3, 196, 0.685)38%, rgba(255, 255, 255, 0.575));
+    background-position: center;
+    background-size: cover;
+    height: 100dvh;
+    scroll-behavior: smooth;
+}
+
+nav {
+    padding: 13px;
+    display: flex;
+    scroll-behavior: smooth;
+    align-items: center;
+    background: rgb(245, 244, 244);
+    justify-content: space-around;
+    overflow: auto;
+}
+
+nav img {
+    width: 47px;
+    height: 42px;
+    justify-content: left;
+    padding: 3px;
+    margin-top: -10px;
+}
+
+nav h2 {
+    color: rgb(41, 19, 241);
+    font-size: 40px;
+    font-family: 'Segoe UI';
+    float: left;
+    letter-spacing: 3px;
+}
+
+nav p {
+    color: rgb(15, 15, 141);
+    font-family: 'Segoe UI';
+    font-weight: bold;
+    justify-content: left;
+    letter-spacing: 1px;
+    font-size: 10px;
+    margin-left: 3px;
+    margin-top: -10px;
+}
+
+.navbar a {
+    color: rgb(0, 0, 0);
+    margin: 0.5rem;
+    padding: 0.5rem;
+    font-size: 18px;
+}
+
+.navbar a:hover {
+    color: var(--btn-color);
+}
+
+.icons div {
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+    margin-right: 10px;
+    display: none;
+}
+
+.icons div:hover {
+    cursor: pointer;
+}
+
+.icons a {
+    color: white;
+    padding: 0.6rem 1.5rem;
+    border: 1px solid rgba(15, 15, 141, 0.644);
+    border-radius: 10px;
+    font-size: 18px;
+    transition: 0.5s;
+    display: inline-block;
+}
+
+.contact-btn:hover {
+    transform: scale(1.1);
+    background: var(--btn-color);
+    border: 1px solid white;
+}
+
+.navbar.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+ul li {
+    position: relative;
+    margin: 0 20px;
+    list-style: none;
+    display: inline-block;
+    padding: 14px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+ul li a {
+    text-decoration: none;
+    cursor: pointer;
+    color: rgb(219, 218, 218);
+    transition: 0.3s ease-in-out;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    font-size: 15px;
+}
+
+ul li a:hover {
+    color: rgba(20, 20, 233, 0.849);
+}
+
+@media (max-width:767px) {
+    .header {
+        padding: 3rem;
+    }
+
+    .icons div {
+        display: initial;
+    }
+
+    .navbar {
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        left: 0;
+        top: 100%;
+        background-color: var(--btn-color);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+
+    }
+
+    .navbar a {
+        display: block;
+        text-align: center;
+        margin: 1rem;
+        padding: 1rem;
+    }
+}
+
+/* ICONs */
+.icons div {
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+    margin-right: 10px;
+    display: none;
+}
+
+.icons div:hover {
+    cursor: pointer;
+}
+
+.icons a {
+    color: rgb(0, 0, 0);
+    padding: 0.6rem 1.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.952);
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.5s;
+    display: inline-block;
+}
+
+.contact-btn:hover {
+    transform: scale(1.1);
+    background: var(--btn-color);
+    border: 1px solid rgb(0, 0, 0);
+}
+
+/* MENU BAR */
+:root {
+    --btn-color: rgba(8, 8, 206, 0.527);
+    --about-sec: #1d1d23;
+}
+
+
+/* SERVICE */
+
+h1 {
+    margin: 0;
+}
+
+main p {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+main {
+    padding: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+section {
+    border-radius: 2%;
+}
+
+.service {
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.service img{
+    width:auto;
+    
+}
+@media (max-width:700px) {
+    .service img{
+        width:200px;
+        height: 200px;
+    }
+
+    .button {
+        display: inline-block;
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 4px;
+        transition: background-color 0.3s;
+        
+    }
+    
+    .button:hover {
+        background-color: #555;
+    }
+}
+
+.service h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.service p {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.button {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    margin-right: 40px;
+}
+
+.button:hover {
+    background-color: #555;
+}
+
+/*SCHEDULE*/
+.schedule-table {
+    border-collapse: collapse;
+    width: 50%;
+}
+
+.schedule-table th,
+.schedule-table td {
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.schedule-table th {
+    background-color: #f2f2f2;
+}
+
+.sched {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 4em;
+}
+
+.text {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+.main main {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main main h1 {
+    padding-top: 3em;
+}
+
+.text h1 {
+    padding-top: 2em;
+    text-decoration: underline black;
+}
+
+.text p {
+    color: black;
+}
+
+.text h2 {
+    padding-top: 1em;
+}
+
+.text a {
+    text-decoration: none;
+    color: black;
+    font-size: 45px;
+    padding-right: 10%;
+}
+@media (max-width:700px) {
+    .text a {
+        text-decoration: none;
+        color: black;
+        font-size: 45px;
+        padding-right: 50px;
+    } 
+}
+
+tr:nth-child(even) {
+    background-color: #68686871;
+}

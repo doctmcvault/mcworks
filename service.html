@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title> TECHNO PHILIPPINES INNOVATION CORPORATION </title>
+      
+      <script>
+        function checkOpeningHours() {
+          var date = new Date();
+          var day = date.getDay();
+    
+          if (day === 0 || day === 6) {
+            document.getElementById("status").textContent = "We're closed on weekends!";
+          } else {
+            document.getElementById("status").textContent = "We're open! Visit us today.";
+          }
+        }
+      </script>
+      
+      <!-- fontawesome link here -->
+      <link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/all.min.css">
+          
+      <!-- style link here -->
+      <link rel="stylesheet" href="css/services.css">
+      <link rel="stylesheet" href="css/web proj.css">
+    </head>
+
+  <body class="main">
+    <nav>        
+        <div class="logo">
+          <a href="home.html">
+            <h2>TECHN </h2>
+            <img src="PICTURES/icon.png" id=logo alt="Logo image"/>
+            <p>PHILIPPINES INNOVATION CORP.</p>
+          </a>
+        </div>
+
+        <ul class="navbar">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="service.html">Service</a></li>
+          <li><a href="product.html">Product</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+      <div class="icons">
+        <div id="menu-bar" class="fas fa-bars"></div>
+        <a class="contact-btn" href="logIn Form.html">LOGIN</a>
+      </div>
+    </nav>
+    <main>
+      <h1>Our Services</h1><br><br>
+      <section class="service">
+        <h2>Supply of Metrials</h2>
+        <img src="PICTURES/supply.jpg" alt="Supply of Materials">
+        <p>We specialize in the reliable and efficient supply of high-quality materials for various industries. With our extensive network of suppliers and years of experience, we ensure a seamless and consistent supply chain.</p>
+        <a href="https://www.facebook.com/technophilippines" class="button">Contact Us</a>
+      </section>
+
+      <section class="service">
+        <h2>System Design</h2>
+        <img src="PICTURES/sysdes.jpg" alt="System Design">
+        <p>We specialize in creating innovative and efficient system designs tailored to meet the unique needs of businesses. Our expert team of designers and engineers collaborate closely with clients to develop robust and scalable solutions.</p>
+        <a href="https://www.facebook.com/technophilippines" class="button">Contact Us</a>
+      </section>
+
+      <section class="service">
+        <h2>Installation, Testing and Commissioning</h2>
+        <img src="PICTURES/install.jpg" alt="ITC">
+        <p>We specialize in the professional installation, testing, and commissioning of various systems and equipment. With our skilled technicians and attention to detail, we ensure a seamless and efficient process from start to finish.</p>
+        <a href="https://www.facebook.com/technophilippines" class="button">Contact Us</a>
+      </section>
+
+      <section class="service">
+        <h2>System Repair</h2>
+        <img src="PICTURES/sysre2.jpg" alt="Repair">
+        <p>We specialize in professional system repair services to restore the functionality and performance of various systems and equipment. Our highly skilled technicians are equipped with the knowledge and experience to diagnose and fix a wide range of system issues.</p>
+        <a href="https://www.facebook.com/technophilippines" class="button">Contact Us</a>
+      </section>
+    </main>
+
+    <div class="text">
+        <h1><a href="https://www.facebook.com/technophilippines">Visit Us!</a></h1>
+        <p id="status"></p>
+        <script>
+          checkOpeningHours();
+        </script>
+        <h2>Opening Hours</h2>
+    </div>
+      <div class="sched">
+        <table class="schedule-table">
+          <tr>
+          <th>Day</th>
+          <th>Time</th>
+          </tr>
+          <tr>
+          <td>Monday</td>
+          <td>08:00 - 17:00</td>
+          </tr>
+          <tr>
+          <td>Tuesday</td>
+          <td>08:00 - 17:00</td>
+          </tr>
+          <tr>
+          <td>Wednesday</td>
+          <td>08:00 - 17:00</td>
+          </tr>
+          <tr>
+          <td>Thursday</td>
+          <td>08:00 - 17:00</td>
+          </tr>
+          <tr>
+          <td>Friday</td>
+          <td>08:00 - 17:00</td>
+          </tr>
+          <tr>
+          <td>Saturday</td>
+          <td>-</td>
+          </tr>
+          <tr>
+          <td>Sunday</td>
+          <td>-</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
